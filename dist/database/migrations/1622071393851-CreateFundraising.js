@@ -42,7 +42,7 @@ class CreateFundraising1622071393851 {
                 },
                 {
                     name: "user_id",
-                    type: "string",
+                    type: "uuid",
                 },
                 {
                     name: "created_at",
@@ -54,7 +54,7 @@ class CreateFundraising1622071393851 {
                 {
                     name: "FKUser",
                     referencedTableName: "user",
-                    referencedColumnNames: ["id"],
+                    referencedColumnNames: ["user_id"],
                     columnNames: ["user_id"],
                     onDelete: "SET NULL",
                     onUpdate: "SET NULL",

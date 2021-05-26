@@ -1,10 +1,11 @@
-import {MigrationInterface, QueryRunner, Table} from "typeorm";
+import {MigrationInterface, QueryRunner,Table} from "typeorm";
 
-export class CreateFundraising1622071393851 implements MigrationInterface {
+export class CreateTransactions1622073139344 implements MigrationInterface {
+
     public async up(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.createTable(
             new Table({
-              name: "fundraising",
+              name: "transactions",
               columns: [
                 {
                   name: "id",
@@ -12,36 +13,16 @@ export class CreateFundraising1622071393851 implements MigrationInterface {
                   isPrimary: true,
                 },
                 {
-                  name: "fundraising_name",
-                  type: "varchar",
+                  name: "user_id",
+                  type: "uuid",
                 },
                 {
-                  name: "description",
-                  type: "varchar",
-                },
-                {
-                  name: "image",
-                  type: "varchar",
-                },
-                {
-                  name: "video",
-                  type: "varchar",
+                  name: "fundraising_id",
+                  type: "uuid",
                 },
                 {
                   name: "value_donated",
                   type: "int",
-                },
-                {
-                  name: "goal_meta",
-                  type: "int",
-                },
-                {
-                  name: "validity",
-                  type: "date",
-                },
-                {
-                  name: "user_id",
-                  type: "uuid",
                 },
                 {
                   name: "created_at",
@@ -55,8 +36,12 @@ export class CreateFundraising1622071393851 implements MigrationInterface {
                   referencedTableName: "user",
                   referencedColumnNames: ["user_id"],
                   columnNames: ["user_id"],
-                  onDelete: "SET NULL",
-                  onUpdate: "SET NULL",
+                },
+                {
+                  name: "FKFundraising",
+                  referencedTableName: "fundraising",
+                  referencedColumnNames: ["id"],
+                  columnNames: ["fundraising_id"],
                 },
               ],
             })
@@ -64,7 +49,7 @@ export class CreateFundraising1622071393851 implements MigrationInterface {
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
-        await queryRunner.dropTable("fundraising");
+        await queryRunner.dropTable('transactions')
     }
 
 }

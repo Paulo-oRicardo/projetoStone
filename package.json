@@ -4,11 +4,11 @@
   "description": "Back end para um site de vaquinha",
   "main": "index.js",
   "scripts": {
-    "start": " NODE_TLS_REJECT_UNAUTHORIZED='0' node dist/server.js",
+    "start": "node dist/server.js",
     "dev": "ts-node-dev --files --ignore-watch node_modules src/server.ts",
     "build": "tsc",
     "test": "jest --transformIgnorePatterns \"node_modules/(?!vaquinhab)/\" --env=jsdom",
-    "typeorm": " ts-node-dev ./node_modules/typeorm/cli.js"
+    "typeorm":" ts-node-dev ./node_modules/typeorm/cli.js"
   },
   "repository": {
     "type": "git",

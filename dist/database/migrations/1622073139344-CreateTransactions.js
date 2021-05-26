@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CreateTransactions1620946379287 = void 0;
+exports.CreateTransactions1622073139344 = void 0;
 const typeorm_1 = require("typeorm");
-class CreateTransactions1620946379287 {
+class CreateTransactions1622073139344 {
     async up(queryRunner) {
         await queryRunner.createTable(new typeorm_1.Table({
             name: "transactions",
@@ -34,7 +34,7 @@ class CreateTransactions1620946379287 {
                 {
                     name: "FKUser",
                     referencedTableName: "user",
-                    referencedColumnNames: ["id"],
+                    referencedColumnNames: ["user_id"],
                     columnNames: ["user_id"],
                 },
                 {
@@ -47,7 +47,7 @@ class CreateTransactions1620946379287 {
         }));
     }
     async down(queryRunner) {
-        await queryRunner.dropTable("transactions");
+        await queryRunner.dropTable('transactions');
     }
 }
-exports.CreateTransactions1620946379287 = CreateTransactions1620946379287;
+exports.CreateTransactions1622073139344 = CreateTransactions1622073139344;
