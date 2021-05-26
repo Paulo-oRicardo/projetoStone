@@ -22,7 +22,7 @@ class CreateTransactions1620946379287 {
                 },
                 {
                     name: "value_donated",
-                    type: "number",
+                    type: "int",
                 },
                 {
                     name: "created_at",

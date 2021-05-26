@@ -2,7 +2,6 @@
 module.exports = {
   type: "postgres",
   url: process.env.DATABASE_URL,
-  ssl:false,
   synchronize: true,
   extra: {
     ssl: {
