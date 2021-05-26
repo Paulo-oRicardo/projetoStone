@@ -5,7 +5,7 @@ const typeorm_1 = require("typeorm");
 class CreateUsers1620820545778 {
     async up(queryRunner) {
         await queryRunner.createTable(new typeorm_1.Table({
-            name: "users",
+            name: "user",
             columns: [
                 {
                     name: "id",
@@ -81,7 +81,7 @@ class CreateUsers1620820545778 {
         }));
     }
     async down(queryRunner) {
-        await queryRunner.dropTable("users");
+        await queryRunner.dropTable("user");
     }
 }
 exports.CreateUsers1620820545778 = CreateUsers1620820545778;

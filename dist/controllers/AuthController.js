@@ -18,7 +18,6 @@ class AuthController {
             if (!user)
                 return res.sendStatus(401);
             const token = jsonwebtoken_1.default.sign({ id: user.id }, process.env.KEY_JWT);
-            //  delete (user.password)
             return res.json({
                 user, token,
             });

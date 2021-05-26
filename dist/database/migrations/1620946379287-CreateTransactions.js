@@ -10,7 +10,7 @@ class CreateTransactions1620946379287 {
                 {
                     name: "id",
                     type: "uuid",
-                    isPrimary: true
+                    isPrimary: true,
                 },
                 {
                     name: "user_id",
@@ -22,7 +22,7 @@ class CreateTransactions1620946379287 {
                 },
                 {
                     name: "value_donated",
-                    type: "number"
+                    type: "number",
                 },
                 {
                     name: "created_at",
@@ -33,15 +33,15 @@ class CreateTransactions1620946379287 {
             foreignKeys: [
                 {
                     name: "FKUser",
-                    referencedTableName: "users",
+                    referencedTableName: "user",
                     referencedColumnNames: ["id"],
-                    columnNames: ["user_id"]
+                    columnNames: ["user_id"],
                 },
                 {
                     name: "FKFundraising",
                     referencedTableName: "fundraising",
                     referencedColumnNames: ["id"],
-                    columnNames: ["fundraising_id"]
+                    columnNames: ["fundraising_id"],
                 },
             ],
         }));

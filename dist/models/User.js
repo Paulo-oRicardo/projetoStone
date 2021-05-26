@@ -75,7 +75,7 @@ __decorate([
     __metadata("design:type", Boolean)
 ], User.prototype, "enabled", void 0);
 User = __decorate([
-    typeorm_1.Entity("users"),
+    typeorm_1.Entity("user"),
     __metadata("design:paramtypes", [])
 ], User);
 exports.User = User;

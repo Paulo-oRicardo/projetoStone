@@ -10,39 +10,39 @@ class CreateFundraising1620922541573 {
                 {
                     name: "id",
                     type: "uuid",
-                    isPrimary: true
+                    isPrimary: true,
                 },
                 {
                     name: "fundraising_name",
-                    type: "varchar"
+                    type: "varchar",
                 },
                 {
                     name: "description",
-                    type: "varchar"
+                    type: "varchar",
                 },
                 {
                     name: "image",
-                    type: "varchar"
+                    type: "varchar",
                 },
                 {
                     name: "video",
-                    type: "varchar"
+                    type: "varchar",
                 },
                 {
                     name: "value_donated",
-                    type: "number"
+                    type: "number",
                 },
                 {
                     name: "goal_meta",
-                    type: "number"
+                    type: "number",
                 },
                 {
                     name: "validity",
-                    type: "date"
+                    type: "date",
                 },
                 {
                     name: "user_id",
-                    type: "string"
+                    type: "string",
                 },
                 {
                     name: "created_at",
@@ -53,7 +53,7 @@ class CreateFundraising1620922541573 {
             foreignKeys: [
                 {
                     name: "FKUser",
-                    referencedTableName: "users",
+                    referencedTableName: "user",
                     referencedColumnNames: ["id"],
                     columnNames: ["user_id"],
                     onDelete: "SET NULL",

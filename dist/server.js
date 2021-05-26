@@ -8,6 +8,8 @@ const express_1 = __importDefault(require("express"));
 require("./database");
 const routes_1 = require("./routes");
 const cors_1 = __importDefault(require("cors"));
+const dotenv_1 = __importDefault(require("dotenv"));
+dotenv_1.default.config();
 const port = 8080;
 exports.app = express_1.default();
 exports.app.use(cors_1.default());

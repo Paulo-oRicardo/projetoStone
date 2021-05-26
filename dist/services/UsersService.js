@@ -9,7 +9,8 @@ class UsersService {
     }
     async createUser({ email, profile_image }) {
         const user = this.usersRepository.create({
-            email, profile_image
+            email,
+            profile_image,
         });
         const emailAlreadyExists = await this.usersRepository.findOne({
             email,
