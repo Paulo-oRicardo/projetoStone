@@ -21,7 +21,7 @@ export class CreateTransactions1620946379287 implements MigrationInterface {
           },
           {
             name: "value_donated",
-            type: "number",
+            type: "int",
           },
           {
             name: "created_at",
