@@ -7,7 +7,7 @@ let fundraising;
 beforeEach(() => {
   users = [
     {
-      email: "Jacksonzinho123@gmail.com",
+      email: "Jacksonzinho245@gmail.com",
       profile_image:
         "https://storage.googleapis.com/golden-wind/nextlevelweek/05-podcastr/opensource.jpg",
     },
@@ -19,7 +19,7 @@ beforeEach(() => {
   ];
   fundraising = [
     {
-      fundraising_name: "Vaquinha pra comprar vacina do covid",
+      fundraising_name: "Vaquinha pra comprar vacina do covid 2.0",
       description: "Vaquinha com intuito de vacinar a população",
       image: "Not found",
       video: "Not found",
@@ -33,21 +33,14 @@ beforeEach(() => {
 describe("Test My app server", () => {
   it("should get main route", async (done) => {
     const res = await request(app).get("/users");
-    expect(res.body).toHaveProperty("error");
+    expect(res.body).toHaveProperty("mensagem");
     done();
   });
 
-  test("adds 1 + 2 to equal 3", () => {
+  test("Ver como está a model", () => {
     const user = new User();
-
     user.username = "Paulo";
     expect(user.username).toEqual("Paulo");
-  });
-
-  it("insert error post in route users", async (done) => {
-    const res = await request(app).post("/users").send(users[0]);
-    expect(res.statusCode).toBe(400);
-    done();
   });
 });
 
@@ -58,6 +51,8 @@ describe("Users functional tests", () => {
       ...users[0],
     });
   });
+});
+describe("Fundraising functional tests", () => {
   it("should return a users  with values", async () => {
     const response = await request(app)
       .post("/fundraising")
