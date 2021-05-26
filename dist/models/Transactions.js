@@ -25,8 +25,8 @@ __decorate([
     __metadata("design:type", String)
 ], Transactions.prototype, "id", void 0);
 __decorate([
-    typeorm_1.JoinColumn({ name: "user_id" }),
     typeorm_1.ManyToOne(() => User_1.User),
+    typeorm_1.JoinColumn({ name: "user_id" }),
     __metadata("design:type", User_1.User)
 ], Transactions.prototype, "user", void 0);
 __decorate([
@@ -34,8 +34,8 @@ __decorate([
     __metadata("design:type", String)
 ], Transactions.prototype, "user_id", void 0);
 __decorate([
-    typeorm_1.JoinColumn({ name: "fundraising_id" }),
     typeorm_1.ManyToOne(() => Fundraising_1.Fundraising),
+    typeorm_1.JoinColumn({ name: "fundraising_id" }),
     __metadata("design:type", Fundraising_1.Fundraising)
 ], Transactions.prototype, "fundraising", void 0);
 __decorate([

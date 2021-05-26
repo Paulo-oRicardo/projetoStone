@@ -36,11 +36,11 @@ export class UsersService {
   }
 
   async getOnlyOneUser({ id }: IUsersGetOnlyOneUser) {
-    return await this.usersRepository.findOne({ id: id });
+    return await this.usersRepository.findOne({user_id: id });
   }
 
   async updateUser({ id }: IUsersGetOnlyOneUser, att) {
-    const user = await this.usersRepository.findOne({ id: id });
+    const user = await this.usersRepository.findOne({ user_id: id });
     this.usersRepository.merge(user, att);
     await this.usersRepository.save(user);
     return user;

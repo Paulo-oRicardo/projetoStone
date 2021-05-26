@@ -18,7 +18,7 @@ class AuthController {
          if(!user)
             return res.sendStatus(401);
          
-          const token = jwt.sign({id: user.id} ,process.env.KEY_JWT);
+          const token = jwt.sign({id: user.user_id} ,process.env.KEY_JWT);
           return res.json({
              user,token,
           })

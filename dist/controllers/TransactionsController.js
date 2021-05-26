@@ -40,7 +40,7 @@ class TransactionsController {
 }
 async function UpdateCoinsUser(id, coins) {
     const usersRepository = typeorm_1.getCustomRepository(UsersRepository_1.UsersRepository);
-    const user = await usersRepository.findOne({ id: id });
+    const user = await usersRepository.findOne({ user_id: id });
     if (coins > user.coins)
         throw new Error("Usuário não possui moedas suficientes para esta transação");
     coins = (user.coins - coins);

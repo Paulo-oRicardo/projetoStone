@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CreateFundraising1620922541573 = void 0;
+exports.CreateFundraising1622071393851 = void 0;
 const typeorm_1 = require("typeorm");
-class CreateFundraising1620922541573 {
+class CreateFundraising1622071393851 {
     async up(queryRunner) {
         await queryRunner.createTable(new typeorm_1.Table({
             name: "fundraising",
@@ -30,11 +30,11 @@ class CreateFundraising1620922541573 {
                 },
                 {
                     name: "value_donated",
-                    type: "number",
+                    type: "int",
                 },
                 {
                     name: "goal_meta",
-                    type: "number",
+                    type: "int",
                 },
                 {
                     name: "validity",
@@ -66,4 +66,4 @@ class CreateFundraising1620922541573 {
         await queryRunner.dropTable("fundraising");
     }
 }
-exports.CreateFundraising1620922541573 = CreateFundraising1620922541573;
+exports.CreateFundraising1622071393851 = CreateFundraising1622071393851;

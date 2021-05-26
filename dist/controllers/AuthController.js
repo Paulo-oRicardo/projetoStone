@@ -17,7 +17,7 @@ class AuthController {
             // const isValidPassword = await bcrypt.compare(password, user.password);
             if (!user)
                 return res.sendStatus(401);
-            const token = jsonwebtoken_1.default.sign({ id: user.id }, process.env.KEY_JWT);
+            const token = jsonwebtoken_1.default.sign({ id: user.user_id }, process.env.KEY_JWT);
             return res.json({
                 user, token,
             });

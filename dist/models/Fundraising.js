@@ -56,8 +56,8 @@ __decorate([
     __metadata("design:type", Date)
 ], Fundraising.prototype, "validity", void 0);
 __decorate([
-    typeorm_1.JoinColumn({ name: "user_id" }),
     typeorm_1.ManyToOne(() => User_1.User),
+    typeorm_1.JoinColumn({ name: "user_id" }),
     __metadata("design:type", User_1.User)
 ], Fundraising.prototype, "user", void 0);
 __decorate([

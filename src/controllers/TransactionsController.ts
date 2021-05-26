@@ -43,7 +43,7 @@ class TransactionsController {
 }
 async function UpdateCoinsUser(id, coins) {
     const usersRepository = getCustomRepository(UsersRepository);
-    const user = await usersRepository.findOne({ id: id });
+    const user = await usersRepository.findOne({ user_id: id });
     if(coins>user.coins) throw new Error("Usuário não possui moedas suficientes para esta transação");
     coins = (user.coins - coins);
     usersRepository.merge(user, { "coins": coins });

@@ -14,15 +14,15 @@ class Transactions {
    @PrimaryColumn()
    id:string;
 
-   @JoinColumn({name:"user_id"})
    @ManyToOne(() => User)
+   @JoinColumn({name:"user_id"})
    user:User;
 
    @Column()
    user_id:string;
 
-   @JoinColumn({name: "fundraising_id"})
    @ManyToOne(() => Fundraising)
+   @JoinColumn({name: "fundraising_id"})
    fundraising:Fundraising;
 
    @Column()

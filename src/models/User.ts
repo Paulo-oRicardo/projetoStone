@@ -5,7 +5,7 @@ import { v4 as uuid } from "uuid";
 @Entity("user")
 class User {
   @PrimaryColumn()
-  id: string;
+  user_id: string;
 
   @Column()
   username: string;
@@ -47,7 +47,7 @@ class User {
   enabled: boolean;
 
   constructor() {
-    if (!this.id) this.id = uuid();
+    if (!this.user_id) this.user_id = uuid();
   }
 }
 
