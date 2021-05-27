@@ -1,13 +1,9 @@
 import { Request, Response } from "express";
-import { getCustomRepository } from "typeorm";
-import { UsersRepository } from "../repositories/UsersRepository";
 import { UsersService } from "../services/UsersService";
 
 class UsersController {
   async createUser(req: Request, res: Response): Promise<void> {
     try {
-      //   const {originalname: name,size, filename: key} = req.file
-      //   const profile_image = `${name}, ${size}, ${key}-${name}, url:''`
       const { email, profile_image } = req.body;
       const usersService = new UsersService();
       const user = await usersService.createUser({ email, profile_image });

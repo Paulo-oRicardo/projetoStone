@@ -1,7 +1,6 @@
 import { Request, Response } from "express";
 import { getRepository } from "typeorm";
 import { User } from "../models/User";
-import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
 dotenv.config();
@@ -13,7 +12,6 @@ class AuthController {
       const { email } = req.body;
 
       const user = await usersRepository.findOne({ where: { email } });
-      // const isValidPassword = await bcrypt.compare(password, user.password);
 
       if (!user) return res.sendStatus(401);
 

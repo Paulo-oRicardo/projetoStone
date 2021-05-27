@@ -22,7 +22,16 @@ export class FundraisingService {
   constructor() {
     this.fundraisingRepository = getCustomRepository(FundraisingRepository);
   }
-  async createFundraising({ fundraising_name, description, image, video, value_donated, goal_meta, validity, user_id }: IFundraisingCreate) {
+  async createFundraising({
+    fundraising_name,
+    description,
+    image,
+    video,
+    value_donated,
+    goal_meta,
+    validity,
+    user_id,
+  }: IFundraisingCreate) {
     const fundraising = this.fundraisingRepository.create({
       fundraising_name,
       description,
@@ -31,7 +40,7 @@ export class FundraisingService {
       value_donated,
       goal_meta,
       validity,
-      user_id
+      user_id,
     });
     await this.fundraisingRepository.save(fundraising);
     return fundraising;
@@ -40,7 +49,7 @@ export class FundraisingService {
     return await this.fundraisingRepository.find({});
   }
   async getOnlyOneFundraising({ id }: IFundraisingGetOnlyOne) {
-    return await this.fundraisingRepository.findOne({ id: id});
+    return await this.fundraisingRepository.findOne({ id: id });
   }
   async updateFundraising({ id }: IFundraisingGetOnlyOne, att) {
     const fundraising = await this.fundraisingRepository.findOne({ id: id });

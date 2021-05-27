@@ -36,7 +36,7 @@ export class UsersService {
   }
 
   async getOnlyOneUser({ id }: IUsersGetOnlyOneUser) {
-    return await this.usersRepository.findOne({user_id: id });
+    return await this.usersRepository.findOne({ user_id: id });
   }
 
   async updateUser({ id }: IUsersGetOnlyOneUser, att) {
