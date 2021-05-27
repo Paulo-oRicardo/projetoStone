@@ -2,6 +2,7 @@ import { Request, Response } from "express";
 import { getCustomRepository } from "typeorm";
 import { UsersRepository } from "../repositories/UsersRepository";
 import { UsersService } from "../services/UsersService";
+
 class UsersController {
   async createUser(req: Request, res: Response): Promise<void> {
     try {
@@ -19,6 +20,7 @@ class UsersController {
       });
     }
   }
+
   async getUsers(req: Request, res: Response): Promise<Response> {
     try {
       return res.json(await new UsersService().getUsers());
@@ -29,6 +31,7 @@ class UsersController {
       });
     }
   }
+
   async getOnlyOneUser(req: Request, res: Response): Promise<Response> {
     try {
       const { id } = req.params;
@@ -42,6 +45,7 @@ class UsersController {
       });
     }
   }
+
   async updateUser(req: Request, res: Response): Promise<Response> {
     try {
       const { id } = req.params;
@@ -55,6 +59,7 @@ class UsersController {
       });
     }
   }
+
   async deleteUser(req: Request, res: Response) {
     try {
       const { id } = req.params;
