@@ -1,4 +1,4 @@
-#  <img align="center" src = "./images/logo_OX.png" alt="Rosto touro Ox Fundraising" width="50px" heigth="50px">  Projeto Stone Ox Fundraising 
+#  <img align="center" src = "./images/logo_OX.png" alt="Rosto touro Ox Fundraising" width="50px" heigth="50px">  Ox Fundraising Prod 
 
 <p align="center">
     <img src ="./images/logo_ox.trans.png" alt="Touro Ox fundraising">
