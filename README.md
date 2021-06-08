@@ -9,17 +9,17 @@
 
 <summary>Veja mais</summary>
 
-1.  [O que é o projeto](https://github.com/GabrielSouzaHub/projetoStone#O-que-%c3%a9-o-projeto)
-2.  [O que faz](https://github.com/GabrielSouzaHub/projetoStone#O-que-faz)
-3.  [O que é uma api](https://github.com/GabrielSouzaHub/projetoStone#O-que-%c3%a9-uma-api)
-4.  [Como está funcionando a api](https://github.com/GabrielSouzaHub/projetoStone#Como-est%c3%a1-funcionando-esta-api)
-5.  [Heroku](https://github.com/GabrielSouzaHub/projetoStone#Heroku)
-6.  [Como baixar e rodar o projeto](https://github.com/GabrielSouzaHub/projetoStone#Como-baixar-e-rodar-o-projeto)
-7.  [Rotas disponíveis](https://github.com/GabrielSouzaHub/projetoStone#Rotas-dispon%c3%adveis)
-8.  [Tecnologias utilizadas](https://github.com/GabrielSouzaHub/projetoStone#Tecnologias-utilizadas)
-9.  [Config Jest](https://github.com/GabrielSouzaHub/projetoStone#Config-Jest)
-10. [Contribuentes](https://github.com/GabrielSouzaHub/projetoStone#Contribuintes)
-11. [Stone](https://github.com/GabrielSouzaHub/projetoStone#Stone)
+1.  [O que é o projeto](https://github.com/Paulo-oRicardo/projetoStone#O-que-%c3%a9-o-projeto)
+2.  [O que faz](https://github.com/Paulo-oRicardo/projetoStone#O-que-faz)
+3.  [O que é uma api](https://github.com/Paulo-oRicardo/projetoStone#O-que-%c3%a9-uma-api)
+4.  [Como está funcionando a api](https://github.com/Paulo-oRicardo/projetoStone#Como-est%c3%a1-funcionando-esta-api)
+5.  [Heroku](https://github.com/Paulo-oRicardo/projetoStone#Heroku)
+6.  [Como baixar e rodar o projeto](https://github.com/Paulo-oRicardo/projetoStone#Como-baixar-e-rodar-o-projeto)
+7.  [Rotas disponíveis](https://github.com/Paulo-oRicardo/projetoStone#Rotas-dispon%c3%adveis)
+8.  [Tecnologias utilizadas](https://github.com/Paulo-oRicardo/projetoStone#Tecnologias-utilizadas)
+9.  [Config Jest](https://github.com/Paulo-oRicardo/projetoStone#Config-Jest)
+10. [Contribuentes](https://github.com/Paulo-oRicardo/projetoStone#Contribuintes)
+11. [Stone](https://github.com/Paulo-oRicardo/projetoStone#Stone)
 </details>
 
 # O que é o projeto
@@ -51,7 +51,7 @@ Heroku é uma plataforma que disponibiliza em nuvem a hospedagem de uma aplicaç
 1. 📌 Clone o projeto
 
 ```Shell
-git clone https://github.com/GabrielSouzaHub/projetoStone.git
+git clone https://github.com/Paulo-oRicardo/projetoStone.git
 ```
 
 2. 📌 Em seu terminal. Instale as dependências
